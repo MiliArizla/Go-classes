@@ -1,5 +1,7 @@
 package main
 
+import "fmt"
+
 //  ===== Bem Vindo =====
 // func main() {
 //   var nome string
@@ -34,20 +36,23 @@ package main
 // }
 
 // ===== Condicionais Switch Case =====
-// func main() {
-// 	var number int
+func main() {
+	var number int
+	number = 3
 
-// 	fmt.Println("Insira um número:")
-// 	fmt.Scan(&number)
-// 	switch{
-// 	case number > 0:
-// 		fmt.Println("Positivo!")
-// 	case number < 0:
-// 		fmt.Println("Negativo!")
-// 	case number == 0:
-// 		fmt.Println("Zero!")
-// 		}
-// 	}
+	fmt.Println("Insira um número:")
+	num, err := fmt.Scan(&number)
+	fmt.Println(num, err)
+	fmt.Println("your number is", number)
+	switch{
+	case number > 0:
+		fmt.Println("Positivo!")
+	case number < 0:
+		fmt.Println("Negativo!")
+	case number == 0:
+		fmt.Println("Zero!")
+		}
+	}
 
 // ===== Loops FOR =====
 // func main() {

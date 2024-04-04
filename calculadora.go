@@ -23,7 +23,11 @@ func main() {
 	case operacao == "-":
 		fmt.Println("O resultado da diferença de", number1, operacao, number2,"é",number1 - number2)
 	case operacao == "/":
-		fmt.Println("O resultado da divisão de", number1, operacao, number2,"é",number1 / number2)
+		if (number2 == 0){
+			fmt.Print("Não é possível fazer a divisão por zero")
+		} else {
+			fmt.Println("O resultado da divisão de", number1, operacao, number2,"é",number1 / number2)
+		}
 	case operacao == "*":
 		fmt.Println("O resultado da multiplicação de", number1, operacao, number2, "é",number1 * number2)
 	default:
